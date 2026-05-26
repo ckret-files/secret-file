@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-container"></div>
+    <div class="dna tl" id="dna-1"></div>
+    <div class="dna tr" id="dna-2"></div>
+    <div class="dna bl" id="dna-3"></div>
+    <div class="dna br" id="dna-4"></div>
+
+    <div class="box active pop-in" id="box-1">
+        <div class="mac-header">
+            <div class="mac-dots">
+                <span class="mac-dot red"></span>
+                <span class="mac-dot yellow"></span>
+                <span class="mac-dot green"></span>
+            </div>
+            <span class="mac-title terminal-title">SECRET.TXT</span>
+            <div class="mac-spacer"></div>
+        </div>
+        <div class="terminal-body">
+            <h1 class="terminal-h1"><span class="prompt-arrow">&gt;</span> Enter your name</h1>
+            <input type="text" class="terminal-input" id="name-input" placeholder="Enter here..." autocomplete="off" spellcheck="false" />
+            <button class="terminal-btn" id="enter-btn"> Verify </button>
+            <p class="error-msg" id="error-msg">[err] wrong person, how did you get this? &gt;:(</p>
+        </div>
+    </div>
+
+    <div class="box" id="box-2">
+        <div class="mac-header">
+            <div class="mac-dots">
+                <span class="mac-dot red"></span>
+                <span class="mac-dot yellow"></span>
+                <span class="mac-dot green"></span>
+            </div>
+            <span class="mac-title msg-title">~ /STATUS</span>
+            <div class="mac-spacer"></div>
+        </div>
+        <div class="msg-body">
+            <span class="prompt-pink">$</span> <span id="msg-target"></span><span class="cursor">_</span>
+        </div>
+    </div>
+
+    <div class="box" id="box-3">
+        <div class="mac-header">
+            <div class="mac-dots">
+                <span class="mac-dot red"></span>
+                <span class="mac-dot yellow"></span>
+                <span class="mac-dot green"></span>
+            </div>
+            <span class="mac-title terminal-title">MESSENGER.EXE</span>
+            <div class="mac-spacer"></div>
+        </div>
+        <div class="chat-wrapper">
+            <div class="chat-container" id="chat-container">
+                <!-- Messages and Inline Actions injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
